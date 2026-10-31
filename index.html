@@ -1,149 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shantanu Mishra | DevOps Engineer & Full Stack Developer</title>
-  <meta name="description" content="Portfolio of Shantanu Mishra - DevOps Engineer with 4+ years experience in high-scale e-commerce and Full Stack Developer for industrial automation." />
-  <link rel="stylesheet" href="styles.css" />
+  <title>Shantanu Mishra — DevOps Engineer</title>
+  <meta name="description" content="Shantanu Mishra is a DevOps engineer and full stack developer. Four years running a high-volume e-commerce platform, plus freelance systems for industrial automation." />
+  <meta name="author" content="Shantanu Mishra" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("sm-theme");
+        var light = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches;
+        var theme = saved === "light" || saved === "dark" ? saved : light ? "light" : "dark";
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (e) {}
+    })();
+  </script>
 </head>
 <body>
-  <nav class="navbar">
-    <div class="container">
-      <a href="#home" class="logo">Shantanu Mishra</a>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
+  <a class="skip" href="#about">Skip to content</a>
+  <header class="nav">
+    <a class="brand" href="#top">SM</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#path">Path</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="theme" type="button" aria-label="Toggle color theme">Theme</button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="kicker">DevOps Engineer · Full stack</p>
+      <h1>Shantanu <em>Mishra</em></h1>
+      <p class="lede">I keep complex web systems reliable — an e-commerce platform that takes thousands of transactions a day, and industrial automation tools built for mixed processes.</p>
+      <p class="status"><span class="dot"></span> Open to DevOps and full stack work</p>
+      <div class="hero-actions">
+        <a class="btn" href="#work">See the work</a>
+        <a class="btn ghost" href="https://github.com/Shantanu20k" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+
+    <section class="metrics" aria-label="Highlights">
+      <article>
+        <p class="metric">4 years</p>
+        <p class="metric-label">DevOps, production</p>
+        <p>Pipelines, infrastructure, and day-to-day reliability for a live e-commerce website and web application.</p>
+      </article>
+      <article>
+        <p class="metric">Thousands</p>
+        <p class="metric-label">transactions / day</p>
+        <p>A busy storefront where deploys, monitoring, and incident response have to hold under real load.</p>
+      </article>
+      <article>
+        <p class="metric">Full stack</p>
+        <p class="metric-label">industrial freelance</p>
+        <p>Custom applications for automation clients, covering mixed industrial processes from interface to backend.</p>
+      </article>
+    </section>
+
+    <section id="about" class="block">
+      <p class="index">01 — About</p>
+      <h2>The job is the <em>system</em>, not the screenshot.</h2>
+      <div class="split">
+        <p>Four years as a DevOps engineer on an e-commerce company whose site and web app process thousands of transactions every day. The work was CI/CD, infrastructure, performance, monitoring, and keeping releases from becoming outages.</p>
+        <p>Alongside that, freelance full stack development for automation industries: different plants, different processes, one requirement — software that operators can actually run.</p>
+      </div>
+      <ul class="principles">
+        <li>Ship through a pipeline, not a laptop.</li>
+        <li>Measure the path a transaction takes.</li>
+        <li>Industrial software has to match the process, not the other way around.</li>
+        <li>Reliability is a feature the customer never sees until it fails.</li>
       </ul>
-      <button class="menu-toggle" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
+    </section>
 
-  <section id="home" class="hero">
-    <div class="container">
-      <p class="hero-subtitle">Hello, I'm</p>
-      <h1>Shantanu Mishra</h1>
-      <h2>DevOps Engineer | Full Stack Developer</h2>
-      <p class="hero-description">
-        4+ years building and maintaining high-scale e-commerce platforms<br />
-        that process thousands of transactions every day.
-      </p>
-      <div class="hero-buttons">
-        <a href="#experience" class="btn btn-primary">View Experience</a>
-        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+    <section id="work" class="block">
+      <p class="index">02 — Work</p>
+      <h2>Two kinds of <em>production</em>.</h2>
+      <div class="cards">
+        <article class="card">
+          <p class="card-meta">E-commerce · 4 years</p>
+          <h3>DevOps Engineer</h3>
+          <p>Owned the delivery path for a high-traffic commerce website and web application. Designed and maintained CI/CD and infrastructure, watched performance under daily transaction volume, and worked with development on deploys, monitoring, and incidents.</p>
+          <ul>
+            <li>CI/CD</li>
+            <li>Infrastructure</li>
+            <li>Monitoring</li>
+            <li>High-traffic releases</li>
+          </ul>
+        </article>
+        <article class="card">
+          <p class="card-meta">Automation industries · freelance</p>
+          <h3>Full stack developer</h3>
+          <p>Built end-to-end applications for clients running mixed industrial processes. Frontend and backend, fitted to each operation instead of a single template.</p>
+          <ul>
+            <li>Full stack</li>
+            <li>Process workflows</li>
+            <li>Custom systems</li>
+            <li>Client delivery</li>
+          </ul>
+        </article>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="about" class="section">
-    <div class="container">
-      <h2 class="section-title">About Me</h2>
-      <div class="about-content">
-        <p>
-          Results-driven technology professional with <strong>4+ years of experience</strong> as a DevOps Engineer
-          in high-scale e-commerce environments, complemented by freelance Full Stack Development work for
-          industrial automation clients.
-        </p>
-        <p>
-          Proven ability to design, deploy, and maintain complex web applications that process thousands of
-          transactions daily while ensuring high availability, performance, and reliability. Experienced in
-          bridging development and operations to deliver robust, scalable solutions across both consumer-facing
-          platforms and industrial process systems.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section id="experience" class="section section-alt">
-    <div class="container">
-      <h2 class="section-title">Experience</h2>
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="job-header">
-              <h3>DevOps Engineer</h3>
-              <span class="job-duration">4 Years</span>
-            </div>
-            <p class="company">E-commerce Company</p>
-            <ul>
-              <li>Designed, implemented, and maintained CI/CD pipelines and infrastructure for a high-traffic e-commerce website and web application handling thousands of transactions every day.</li>
-              <li>Managed complex production systems focused on reliability, scalability, performance optimization, and continuous delivery.</li>
-              <li>Collaborated with development and operations teams to ensure smooth deployments, monitoring, and incident response in a demanding transactional environment.</li>
-              <li>Supported the full lifecycle of a large-scale e-commerce platform, contributing to system stability under high load and frequent feature releases.</li>
-            </ul>
+    <section id="path" class="block">
+      <p class="index">03 — Path</p>
+      <h2>The path, <em>in order</em>.</h2>
+      <ol class="timeline">
+        <li>
+          <p class="when">4 years</p>
+          <div>
+            <h3>DevOps Engineer <span>E-commerce company</span></h3>
+            <p>Complex commerce site and web application. Thousands of transactions a day. Pipelines, infrastructure, stability under frequent releases.</p>
           </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="job-header">
-              <h3>Freelance Full Stack Developer</h3>
-              <span class="job-duration">Various Engagements</span>
-            </div>
-            <p class="company">Automation Industries</p>
-            <ul>
-              <li>Developed end-to-end full stack solutions for industrial automation clients.</li>
-              <li>Worked on mixed-type industrial processes, delivering custom web applications and systems tailored to diverse operational requirements.</li>
-              <li>Handled both frontend and backend development while integrating with process-oriented workflows and client-specific needs.</li>
-              <li>Delivered practical, maintainable solutions that supported automation and operational efficiency across varied industrial use cases.</li>
-            </ul>
+        </li>
+        <li>
+          <p class="when">Freelance</p>
+          <div>
+            <h3>Full stack developer <span>Automation industries</span></h3>
+            <p>Various engagements across mixed industrial processes. Practical systems people on the floor can use.</p>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
+        </li>
+      </ol>
+    </section>
 
-  <section id="skills" class="section">
-    <div class="container">
-      <h2 class="section-title">Core Competencies</h2>
-      <div class="skills-grid">
-        <div class="skill-card">
-          <h3>DevOps & Infrastructure</h3>
-          <p>CI/CD pipelines, infrastructure management, high-availability systems, monitoring and reliability for high-transaction platforms.</p>
-        </div>
-        <div class="skill-card">
-          <h3>Full Stack Development</h3>
-          <p>End-to-end web application development for both consumer e-commerce and industrial automation systems.</p>
-        </div>
-        <div class="skill-card">
-          <h3>Scalable Architecture</h3>
-          <p>Designing and maintaining systems that handle thousands of daily transactions with a focus on performance and stability.</p>
-        </div>
-        <div class="skill-card">
-          <h3>Cross-functional Collaboration</h3>
-          <p>Bridging development, operations, and domain stakeholders to deliver production-ready solutions.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    <section id="contact" class="block contact">
+      <p class="index">04 — Contact</p>
+      <h2>If the system is <em>on fire</em> or just needs building.</h2>
+      <p class="lede">DevOps for transactional platforms, and full stack work where the process is industrial.</p>
+      <a class="btn" href="https://github.com/Shantanu20k" target="_blank" rel="noopener">github.com/Shantanu20k</a>
+    </section>
+  </main>
 
-  <section id="contact" class="section section-alt">
-    <div class="container">
-      <h2 class="section-title">Get In Touch</h2>
-      <p class="contact-text">
-        I'm open to new opportunities and collaborations. Feel free to reach out.
-      </p>
-      <div class="contact-links">
-        <a href="https://github.com/Shantanu20k" target="_blank" rel="noopener" class="btn btn-primary">GitHub</a>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; <span id="year"></span> Shantanu Mishra. All rights reserved.</p>
-    </div>
+  <footer>
+    <p>© <span id="year"></span> Shantanu Mishra</p>
+    <p>IST</p>
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>
